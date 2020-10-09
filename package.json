@@ -1,0 +1,25 @@
+{
+    "name": "template-ts-cli",
+    "version": "0.0.1",
+    "description": "A template to develop cli apps using TS, Webpack, Babel and Nodemon",
+    "main": "src/index.js",
+    "scripts": {
+        "build": "webpack --config=webpack.config.js",
+        "dev": "webpack --watch",
+        "rimraf": "rimraf node_modules"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.11.6",
+        "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+        "@babel/preset-env": "^7.11.5",
+        "babel-loader": "^8.1.0",
+        "nodemon-webpack-plugin": "^4.3.2",
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.0",
+        "webpack-node-externals": "^2.5.2"
+    }
+}
