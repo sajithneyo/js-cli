@@ -26,21 +26,7 @@ module.exports = {
                 test: /\.m?js$/,
                 exclude: /(node_modules)/,
                 use: {
-                    loader: 'babel-loader',
-                    options: {
-                        cacheDirectory: true,
-                        presets: [
-                            [
-                                "@babel/preset-env",
-                                {
-                                    targets: {
-                                        node: "current"
-                                    }
-                                }
-                            ]
-                        ],
-                        plugins: ['@babel/plugin-proposal-object-rest-spread']
-                    },
+                    loader: 'swc-loader',
                 },
             },
         ],
