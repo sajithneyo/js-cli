@@ -1,5 +1,5 @@
-function a() {
-    console.log("variable")
+function test() {
+    console.log("Hello World")
 }
 
-a();
+test();
